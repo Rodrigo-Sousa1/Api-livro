@@ -6,6 +6,7 @@ app = Flask(__name__)
 CORS(app)
 
 
+
 def init_db():
     with sqlite3.connect('database.db') as conn:
         conn.execute("""CREATE TABLE IF NOT EXISTS livros(
